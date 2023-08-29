@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algorithme</title>
+</head>
+<body>
+   
+   Algorithme calculate The Numbre of Caractére
+
+   Var sentence: STRING 
+   var length: INTEGER <!--  its mean the lenght of sentence-->
+   var i;INTEGER
+  
+
+   
+   Begin
+
+   Ecrire:("entre une chaine de caractére:")
+
+   lire(sentence)
+  
+  
+   length=0
+   i=1
+
+  while(sentence!==".") Do
+  
+  lenght= lenght+1
+
+   i= i+1
+   
+ end while
+ write(lenght)
+
+  +END
+   
+<!---the second solution The number of words-->
+
+ Var sentence: STRING
+ var wordCount: INTEGER <!--counter of word-->
+  var i: INTEGER
+
+  BeGin
+   Ecrire("Enter a sentence:")
+   lire(sentence)
+   
+   wordCount = 0
+   i = 1  <!-- Start at the first character of the sentence -->
+
+   while (i <= length(sentence)) Do
+      if (sentence==" ") Then
+         wordCount = wordCount + 1
+      end if
+      i = i + 1
+   end while
+
+  
+
+   write("Number of words:", wordCount)
+  END
+
+<!---the last structur The number of vowels in the sentence-->
+
+
+  Var sentence: STRING
+  var vowelCount: INTEGER <!-- counter of vowels -->
+  var i: INTEGER
+
+  Begin
+   Ecrire("Enter a sentence:")
+   lire(sentence)
+   
+   vowelCount = 0
+   i = 1  <!-- Start at the first character of the sentence -->
+
+    while (i <= length(sentence)) Do
+     
+      if (sentence=='a'OR sentence=='u' OR sentence=='o' OR sentence=='e' sentence=='i' OR sentence=='y') Then  <!-- Check if the character is a vowel word -->
+         vowelCount = vowelCount + 1
+      end if
+      i = i + 1
+   end while
+
+   write("Number of vowels:", vowelCount)
+  End
+
+
+</body>
+</html>
